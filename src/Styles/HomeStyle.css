@@ -1,0 +1,169 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.home {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75px auto;
+}
+
+.topcontent {
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #A0DEFF;
+}
+
+.search {
+    grid-column: 2;
+    background-color: transparent;
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid rgb(100, 100, 100);
+    font-size: 1rem;
+}
+
+.account {
+    grid-column: 3;
+    margin: auto 0 auto auto;
+}
+
+.account button {
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 120px;
+    font-size: 1rem;
+}
+
+.btn_account {
+    grid-column: 3;
+    margin: auto 20px auto auto;
+    background-color: rgb(13, 146, 244);
+    border-radius: 50%;
+}
+
+.btn_account button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+#btn_signup {
+    color: black;
+    margin-right: 5px;
+}
+
+#btn_signup:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+#btn_login {
+    color: white;
+    background-color: rgb(13, 146, 244);
+}
+
+#btn_login:hover{
+    background-color: blue;
+}
+
+.myaccount {
+    grid-column: 3;
+    padding: 0;
+    justify-self: end;
+}
+
+#btn_account {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 100rem;
+    border: none;
+}
+
+.account-menu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 10;
+}
+
+.menu-option {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-option:hover {
+    background-color: #f0f0f0;
+}
+
+.bottomcontent {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 1000px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    overflow: hidden;
+}
+
+.tabletitle {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 5fr 2fr 50px;
+}
+
+.tabletitle span {
+    grid-column: inherit;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+}
+
+.listproduct {
+    grid-row: 2;
+    overflow-y: auto;
+    max-height: 550px;
+    padding: 10px;
+}
+
+.additem {
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.additem:hover {
+    background-color: rgb(220, 220, 220);
+}

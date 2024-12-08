@@ -1,0 +1,43 @@
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 5fr 2fr 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order,
+.name,
+.type,
+.note,
+.quantity,
+.more {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.item button {
+    background-color: transparent;
+    outline: none;
+    border-radius: 100rem;
+}
+
+.more {
+    border: none;
+}
+
+.more:hover {
+    background-color: rgb(158, 158, 158);
+}
