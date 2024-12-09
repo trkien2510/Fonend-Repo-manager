@@ -13,7 +13,7 @@ const Profile = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!localStorage.getItem('username') || !localStorage.getItem('email')) {
+        if (!localStorage.getItem('username')) {
             navigate('/Signup');
         } else {
             setUsername(localStorage.getItem('username') || '');
